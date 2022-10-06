@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #eee;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(#8c9c87 0%, 
+#d1dbce 50%, #fff 100%);
+  text-shadow: -0.5px -0.5px 0 #000, 0.5px -0.5px 0 #000, -0.5px 0.5px 0 #000, 0.5px 0.5px 0 #000;
+  font-size: 1.5rem;
+}
+
+a {
+    text-decoration: none;
+    color: #eee;
+}
+
+#navbar {
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  white-space: nowrap;
+  background-color: #8c9c87;
+}
+
+li {
+  margin-left: 15px;
+  list-style: none;
+}
+
+#welcome-section {
+  width: 100%;
+  height: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+#welcome-section h1, #welcome-section h2 {
+  font-weight: 400;
+}
+
+#about-me {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+#about-me-text {
+  font-size: 1rem;
+  display: flex;
+}
+
+#projects {
+  text-align: center;  
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 10px;
+}
+
+.project-tile {
+
+  white-space: nowrap;
+  margin-left: 20px;
+ }
+
+ #profile-link {
+  display: flex;
+  flex-direction: column;
+  max-width: 25vw;
+  margin-bottom: 10px;
+ }
+
+ @media (max-width: 650px) {
+   img {
+     display: none;
+   }
+   #profile-link {
+     max-width: none;
+   }
+   #projects {
+     flex-wrap: wrap;
+   }
+ }
